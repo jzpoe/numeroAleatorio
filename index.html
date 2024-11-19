@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numeroGanador = Math.random() * 100;
+        let numeroTransformado = Math.round(numeroGanador)
+
+        console.log(numeroTransformado)
+        let numeroAdivinar = prompt("ingresa un numero adivinar");
+
+
+        if (numeroAdivinar == numeroTransformado){
+            document.write("ganaste !! con el numero: ", numeroGanador)
+        }else{
+            document.write("lo siento el numero: " + numeroTransformado +" no es")
+        }
+
+
+    </script>
+</body>
+</html>
